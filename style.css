@@ -344,8 +344,6 @@ button:hover {
     width: 90%;
     max-width: 420px;
     border-radius: 12px;
-    background-color: white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0 ,0.05);
   }
   
   .form input {
