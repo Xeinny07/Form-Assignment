@@ -61,17 +61,7 @@ While working on this project, I learned:
 - Improved understanding of responsive layout techniques using Flexbox and media queries
 - Better organization and readability in styling
 
-```js
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  if (isFormValid()) {
-    showThankYouMessage();
-  } else {
-    showErrors();
-  }
-});
-
-### Continued Development
+- ### Continued Development
 In future projects, i want to
 
 -Improve form accessibility (ARIA, screen reader support)
@@ -85,3 +75,13 @@ In future projects, i want to
 -Name Zainab Oyindamola AbdulAkeem
 -Frontend Mentor @Xeinny07
 -Twitter @Xeinny_07
+
+```js
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  if (isFormValid()) {
+    showThankYouMessage();
+  } else {
+    showErrors();
+  }
+});
