@@ -27,6 +27,7 @@ body {
 
 .bg-mobile {
   width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -337,12 +338,14 @@ button:hover {
   }
 
   .form-section {
-    margin: 0 auto;
+    margin:2rem auto 0 auto;
     margin-top: 2rem;
     padding: 1.5rem;
-    width: 100%;
+    width: 90%;
     max-width: 420px;
     border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0 ,0.05);
   }
   
   .form input {
