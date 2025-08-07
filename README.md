@@ -1,113 +1,87 @@
-# Frontend Mentor - Interactive card details form 
+# Frontend Mentor - Interactive Card Details Form
 
-## Table of contents
+A responsive card form interface challenge from Frontend Mentor. Users can input credit card details and see the changes reflected live on a virtual card. This project emphasizes form validation, responsive design, and  updates via JavaScript.
+
+## Table of Contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
+  - [The Challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
+- [My Process](#my-process)
+  - [Built With](#built-with)
+  - [What I Learned](#what-i-learned)
+  - [Continued Development](#continued-development)
+  - [Useful Resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+---
 
 ## Overview
 
-### The challenge
+### The Challenge
 
 Users should be able to:
 
 - Fill in the form and see the card details update in real-time
-- Receive error messages when the form is submitted if:
-  - Any input field is empty
-  - The card number, expiry date, or CVC fields are in the wrong format
-- View the optimal layout depending on their device's screen size
-- See hover, active, and focus states for interactive elements on the page
+- Receive error messages when any input field is empty
+- The card number, expiry date, or CVC fields are in the wrong format
+- View a responsive layout for mobile and desktop devices
+- See hover, active, and focus states for all interactive elements
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Screenshot of Project](./![alt text](image.png))
+![Screenshot of project](![alt text](image-1.png))
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- 🔗 **Solution**: [View on Frontend Mentor]()
+- 🌐 **Live Site**: [View Live]()
 
-## My process
+---
 
-### Built with
+## My Process
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
+### Built With
+
+- HTML5
+- CSS (Custom Properties, Flexbox)
+- JavaScript (Vanilla)
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- Responsive layout for mobile & desktop
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+### What I Learned
 
-### What I learned
+While working on this project, I learned:
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+- How to dynamically update content in real-time using JavaScript
+- Proper input validation for credit card forms
+- Improved understanding of responsive layout techniques using Flexbox and media queries
+- Better organization and readability in styling
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  if (isFormValid()) {
+    showThankYouMessage();
+  } else {
+    showErrors();
+  }
+});
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+### Continued Development
+In future projects, i want to
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+-Improve form accessibility (ARIA, screen reader support)
+-Explore real-time formatting for input fields (e.g., auto-spacing card numbers)
+-Add localStorage support for saved card data
 
-### Continued development
+### Useful Resources 
+-Frontend Mentor Challenge Page
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
-
-## Author
-
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+### Author
+-Name Zainab Oyindamola AbdulAkeem
+-Frontend Mentor @Xeinny07
+-Twitter @Xeinny_07
