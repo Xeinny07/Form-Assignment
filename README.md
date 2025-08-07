@@ -64,17 +64,17 @@ While working on this project, I learned:
 - ### Continued Development
 In future projects, i want to
 
--Improve form accessibility (ARIA, screen reader support)
--Explore real-time formatting for input fields (e.g., auto-spacing card numbers)
--Add localStorage support for saved card data
+- Improve form accessibility (ARIA, screen reader support)
+- Explore real-time formatting for input fields (e.g., auto-spacing card numbers)
+- Add localStorage support for saved card data
 
 ### Useful Resources 
 -Frontend Mentor Challenge Page
 
 ### Author
--Name Zainab Oyindamola AbdulAkeem
--Frontend Mentor @Xeinny07
--Twitter @Xeinny_07
+- Name Zainab Oyindamola AbdulAkeem
+- Frontend Mentor @Xeinny07
+- Twitter @Xeinny_07
 
 ```js
 form.addEventListener("submit", (e) => {
