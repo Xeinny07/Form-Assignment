@@ -1,0 +1,375 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'monospace',sans-serif;
+}
+
+body {
+  background: hsl(270, 3% 87%);
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Sidebar backgrounds */
+.sidebar-bg {
+  position: absolute;
+  width: 100%;
+}
+
+.bg-desktop {
+  display: none;
+}
+
+.bg-mobile {
+  width: 100%;
+  display: block;
+}
+
+.content-area {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 3rem;
+}
+
+/* card preview section */
+.card-preview {
+  position: relative;
+  margin: auto;
+  width: 400px;
+  height: 250px;
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 350px;
+  height: 200px;
+  border-radius: 4px;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  overflow: hidden;
+}
+
+.card-front {
+  top: 18px;
+  left: 50px;
+  z-index: 2;
+}
+
+.card-back {
+  top: 240px;
+  left: 130px;
+  z-index: 1;
+}
+
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 60px;
+}
+
+.card-number {
+  position: absolute;
+  bottom: 55px;
+  left: 20px;
+  letter-spacing: 5px;
+  font-size: 1.3rem;
+}
+
+.card-details {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.card-cvc {
+  position: absolute;
+  top: 89px;
+  right: 30px;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+
+/* form section */
+.form-section {
+  padding:  2rem 1.5rem;
+  background-color: white;
+  border-radius: 8px;
+  max-width: 400px;
+  margin-left: 350px;
+}
+
+form label {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  display: block;
+  color: hsl(278, 68% 11%);
+  font-weight: bold;
+}
+
+form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.2rem;
+  border: 1px solid hsl(270, 3% 87%);
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+form input:hover,
+form input:focus {
+  border-color: hsl(278, 68%, 30%);
+  outline: none;
+  box-shadow: 0 0 0 2px hsla(278, 68%, 30%, 0.2);
+  transition: all 0.3s ease;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.form-group{
+  flex: 1;
+}
+
+.expiry-inputs {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.7rem;
+  margin-top: 0.25rem;
+  display: block;
+}
+
+button {
+  margin-top: 1.5rem;
+  width: 100%;
+  background-color: hsl(278, 68%, 11%);
+  color: white;
+  padding: 0.65rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+button:hover {
+  background-color: hsl(278, 68%, 20%); 
+  transform: scale(1.02);               
+  transition: all 0.3s ease;
+}
+
+/* Thank You Section */
+.thank-you {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  min-height: 300px;
+  align-items: center;
+  justify-content: left;
+}
+
+.thank-you img {
+  width: 70px;
+  margin-bottom: 1.5rem;
+}
+
+.thank-you h2 {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.thank-you p {
+  color: hsl(279, 6%, 55%);
+}
+
+.thank-you button {
+  margin-top: 2rem;
+  width: 280px;
+}
+
+
+.hidden {
+  display: none;
+}
+
+
+
+/* Media Query for Desktop */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    height: 100vh;
+  }
+
+  .sidebar-bg {
+    width: 30%;
+  }
+
+  .bg-desktop {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .bg-mobile {
+    display: none;
+  }
+
+  .content-area {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-preview {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    align-items: flex-start;
+  }
+
+  .form-section {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar-bg {
+    position: relative;
+    height: 240px;
+  }
+
+  .content-area {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 0;
+  }
+
+  .card-preview {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    margin-top: -130px;
+    z-index: 1;
+ }
+
+  .card-front,
+  .card-back {
+    width: 90vw;
+    height: 55vw;
+    max-width: 400px;
+    max-height: 230px;
+  }
+
+  .card-back {
+    top: -100px;
+    left: 130px;
+    z-index: 1; 
+  }
+
+  .card-front {
+    top: 38px;
+    left: 15px;
+    z-index: 2; 
+  }
+
+  .card-number {
+    font-size: 1.5em;
+    bottom: 18%;
+    left: 6%;
+    letter-spacing: 0.3em;
+  }
+
+  .card-details {
+    bottom: 10%;
+    left: 6%;
+    right: 6%;
+    font-size: 0.75em;
+  }
+
+  .card-cvc {
+    top: 45%;
+    right: 8%;
+    font-size: 1em;
+  }
+
+  .card-logo {
+    top: 10%;
+    left: 6%;
+    width: 20%;
+  }
+
+  .form-section {
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 420px;
+    border-radius: 12px;
+  }
+  
+  .form input {
+    padding: 1rem;
+    font-size: 1.1rem;
+  }
+
+  .form label {
+    font-size: 1rem;
+  }
+
+  .button {
+    padding: 0.85rem;
+    font-size: 1.05rem;
+  }
+
+  .thank-you {
+    padding: 1.5rem 1rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .thank-you h2 {
+    font-size: 1.25rem;
+  }
+
+  .thank-you p {
+    font-size: 0.95rem;
+  }
+}
