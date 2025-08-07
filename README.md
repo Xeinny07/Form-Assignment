@@ -69,7 +69,7 @@ In future projects, i want to
 - Add localStorage support for saved card data
 
 ### Useful Resources 
--Frontend Mentor Challenge Page
+- Frontend Mentor Challenge Page
 
 ### Author
 - Name Zainab Oyindamola AbdulAkeem
